@@ -1,7 +1,0 @@
-{
-  "name": "app-two",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

@@ -20,9 +20,9 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
-      "@deva/components": ["libs/components/src/index.ts"],
-      "@deva/dumb-ui": ["libs/dumb-ui/src/index.ts"],
-      "@deva/services": ["libs/services/src/index.ts"]
+      "@deva/core": ["libs/core/src/index.ts"],
+      "@deva/shared": ["libs/shared/src/index.ts"],
+      "@deva/ui": ["libs/ui/src/index.ts"]
     },
     "rootDir": "."
   },
