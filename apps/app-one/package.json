@@ -1,0 +1,8 @@
+{
+  "name": "app-one",
+  "devDependencies": {
+    "@capacitor/cli": "../../node_modules/@capacitor/cli",
+    "@capacitor/ios": "../../node_modules/@capacitor/ios",
+    "@capacitor/android": "../../node_modules/@capacitor/android"
+  }
+}
