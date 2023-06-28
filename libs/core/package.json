@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^16.1.0",
-    "@angular/core": "^16.1.0"
+    "@angular/core": "^16.1.0",
+    "@ionic/angular": "../../node_modules/@ionic/angular"
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@nxext/ionic-angular": "../../node_modules/@nxext/ionic-angular"
   },
   "sideEffects": false
 }

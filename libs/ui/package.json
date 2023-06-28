@@ -4,14 +4,14 @@
   "peerDependencies": {
     "@angular/common": "^16.1.0",
     "@angular/core": "^16.1.0",
-    "@ionic/angular": "7.1.0",
-    "ionicons": "7.1.2"
+    "@ionic/angular": "../../node_modules/@ionic/angular",
+    "ionicons": "../../node_modules/ionicons"
   },
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@nxext/ionic-angular": "^16.2.0"
+    "@nxext/ionic-angular": "../../node_modules/@nxext/ionic-angular"
   },
   "sideEffects": false
 }
