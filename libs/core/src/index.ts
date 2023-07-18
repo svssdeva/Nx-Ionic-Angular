@@ -10,5 +10,5 @@ export * from './lib/services/redirection/redirection.service';
 export * from './lib/services/router-state/router-state.service';
 export * from './lib/services/storage/cookie-storage.service';
 export * from './lib/services/storage/local-storage.service';
-
+export * from './lib/services/ng-zone/ng-zone.service';
 /*** project services end ***/
