@@ -4,5 +4,14 @@
     "@capacitor/cli": "../../node_modules/@capacitor/cli",
     "@capacitor/ios": "../../node_modules/@capacitor/ios",
     "@capacitor/android": "../../node_modules/@capacitor/android"
-  }
+  },
+  "browserslist": [
+    "Chrome >=61",
+    "ChromeAndroid >=61",
+    "Firefox >=63",
+    "Firefox ESR",
+    "Edge >=79",
+    "Safari >=13",
+    "iOS >=13"
+  ]
 }
