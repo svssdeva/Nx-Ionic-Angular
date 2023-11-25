@@ -8,16 +8,12 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/app-one",
         "index": "apps/app-one/src/index.html",
         "main": "apps/app-one/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/app-one/tsconfig.app.json",
         "assets": [
           "apps/app-one/src/assets",
@@ -72,10 +68,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "app-one:build:production"
+          "buildTarget": "app-one:build:production"
         },
         "development": {
-          "browserTarget": "app-one:build:development"
+          "buildTarget": "app-one:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -83,35 +79,21 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "app-one:build"
+        "buildTarget": "app-one:build"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "apps/app-one/**/*.ts",
-          "apps/app-one/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/app-one/**/*.ts", "apps/app-one/**/*.html"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/app-one/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/app-one/jest.config.ts"
       }
     },
     "serve-static": {
